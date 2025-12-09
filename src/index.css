@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Manrope", sans-serif;
+    --font-bebas: "Bebas Neue", sans-serif;
+
+    --color-primary-fill: #0A0A0A;
+    --color-neutral-offwhite: #C7C7C7;
+    --color-neutral-white: #FFFFFF;
+    --color-neutral-black: #0A0A0A;
+    --color-primary: #D3E97A;
+    --color-misc-fill: #222222;
+}
