@@ -10,4 +10,10 @@
     --color-neutral-black: #0A0A0A;
     --color-primary: #D3E97A;
     --color-misc-fill: #222222;
+
+    --color-primary-hover: #EBF5C3;
+    --color-misc-fill-hover: #343434;
+
+    --color-primary-active: #c0c98f;
+    --color-misc-fill-active: ##404040;
 }
