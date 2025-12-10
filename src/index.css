@@ -17,3 +17,8 @@
     --color-primary-active: #c0c98f;
     --color-misc-fill-active: ##404040;
 }
+
+body {
+    background-color: var(--color-primary-fill);
+    color: var(--color-neutral-offwhite);
+}
