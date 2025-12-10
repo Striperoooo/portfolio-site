@@ -17,15 +17,38 @@ export default function Header() {
     }
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50 bg-primary-fill/95 backdrop-blur-sm border-b border-neutral-offwhite/10">
-            <div className="py-6 flex justify-between items-center px-4">
+        <header className="fixed top-0 left-0 w-full z-50 bg-primary-fill/95 backdrop-blur-sm border-b border-neutral-offwhite/10 flex justify-center">
+            <div className="w-full max-w-[1224px] py-6 flex justify-between items-center px-4">
                 <Typography
                     variant="mobileHeaderH1" className="text-neutral-offwhite"
                 >
                     CHARLES D. VILLANUEVA
                 </Typography>
 
-                <button onClick={toggleMenu} aria-label="Toggle menu" className="z-50 relative">
+                {/* Desktop Navigation */}
+                <nav className="hidden md:flex items-center gap-8">
+                    <button
+                        onClick={() => scrollToSection("projects")}
+                        className="text-neutral-offwhite hover:text-primary transition-colors cursor-pointer active:text-primary/75"
+                    >
+                        <Typography variant="mobileBodySM" className="font-bold uppercase">Projects</Typography>
+                    </button>
+                    <button
+                        onClick={() => scrollToSection("about")}
+                        className="text-neutral-offwhite hover:text-primary transition-colors cursor-pointer active:text-primary/75"
+                    >
+                        <Typography variant="mobileBodySM" className="font-bold uppercase">About</Typography>
+                    </button>
+                    <button
+                        onClick={() => scrollToSection("contact")}
+                        className="text-neutral-offwhite hover:text-primary transition-colors"
+                    >
+                        <Typography variant="mobileBodySM" className="font-bold uppercase cursor-pointer active:text-primary/75">Contact</Typography>
+                    </button>
+                </nav>
+
+                {/* Mobile Menu Button */}
+                <button onClick={toggleMenu} aria-label="Toggle menu" className="z-50 relative md:hidden">
                     <FontAwesomeIcon
                         icon={isMenuOpen ? faXmark : faBars}
                         className="text-neutral-offwhite text-[25px] cursor-pointer transition-all duration-300"

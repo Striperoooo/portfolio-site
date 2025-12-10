@@ -1,7 +1,7 @@
 import Typography from "./ui/Typography"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { TechBadge } from "./ui/TechBadge"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 interface ProjectCardProps {
     title: string
@@ -23,86 +23,53 @@ export default function ProjectCard({
     githubLink
 }: ProjectCardProps) {
     return (
-        <div className="flex flex-col items-center justify-center gap-10">
-            <img
-                src={imageSrc}
-                alt={imageAlt}
-                className="w-full h-auto rounded-lg border-2 border-neutral-offwhite/30"
-            />
+        <article className="flex flex-col md:grid md:grid-cols-2 md:gap-10 md:items-center">
+            {/* Image Section */}
+            <div className="w-full h-auto rounded-lg overflow-hidden border border-neutral-offwhite/10 md:order-1">
+                <img
+                    src={imageSrc}
+                    alt={imageAlt}
+                    className="w-full h-auto object-cover"
+                />
+            </div>
 
-            <div>
-                <Typography
-                    variant="mobileH3"
-                    className="text-neutral-white"
-                >
+            {/* Content Section */}
+            <div className="mt-6 md:mt-0 md:order-2">
+                <Typography variant="mobileH3" className="text-neutral-white md:text-3xl">
                     {title}
                 </Typography>
 
-                <div className="mt-4 pt-4 border-t border-neutral-offwhite/20">
-                    <Typography
-                        variant="mobileH5"
-                        className="text-neutral-white"
-                    >
-                        Tech Stack
-                    </Typography>
-
-                    <div className="mt-2 flex flex-wrap gap-3">
-                        {techStack.map(tech => (
-                            <TechBadge key={tech} name={tech} />
-                        ))}
-                    </div>
-                </div>
-
-                <Typography
-                    variant="mobileBodyMD"
-                    className="mt-4 text-neutral-offwhite"
-                >
+                <Typography variant="mobileBodyMD" className="mt-4 text-neutral-offwhite md:text-lg">
                     {description}
                 </Typography>
 
-                <div className="mt-8 w-full flex flex-col justify-center gap-4">
-                    <Typography
-                        variant="mobileH5"
-                        className="text-neutral-white pt-4 border-t border-neutral-offwhite/20"
+                <div className="mt-6 flex flex-wrap gap-3">
+                    {techStack.map((tech) => (
+                        <TechBadge key={tech} name={tech} />
+                    ))}
+                </div>
+
+                <div className="mt-8 flex items-center gap-6">
+                    <a
+                        href={demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary hover:text-primary-hover transition-colors font-bold uppercase tracking-wide text-sm"
                     >
-                        LINKS
-                    </Typography>
-
-                    <div className="flex items-center gap-4">
-                        <a
-                            href={demoLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center gap-2 
-                        p-4 bg-primary text-neutral-black 
-                        font-bold text-[0.875rem] leading-none tracking-normal uppercase 
-                        rounded-full cursor-pointer hover:bg-primary-hover active:bg-primary-active"
-                        >
-                            LIVE DEMO
-                            <FontAwesomeIcon
-                                icon={faUpRightFromSquare}
-                                className="text-[0.875rem]"
-                            />
-                        </a>
-
-                        <a
-                            href={githubLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center gap-2 
-                        p-4 bg-primary text-neutral-black 
-                        font-bold text-[0.875rem] leading-none tracking-normal uppercase 
-                        rounded-full cursor-pointer hover:bg-primary-hover active:bg-primary-active"
-                        >
-                            GITHUB
-                            <FontAwesomeIcon
-                                icon={faUpRightFromSquare}
-                                className="text-[0.875rem]"
-                            />
-                        </a>
-                    </div>
+                        View Project
+                        <FontAwesomeIcon icon={faArrowRight} />
+                    </a>
+                    <a
+                        href={githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-neutral-offwhite hover:text-white transition-colors font-bold uppercase tracking-wide text-sm"
+                    >
+                        View Code
+                        <FontAwesomeIcon icon={faArrowRight} />
+                    </a>
                 </div>
             </div>
-        </div>
+        </article>
     )
 }

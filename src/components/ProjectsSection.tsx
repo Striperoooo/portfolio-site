@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard"
 
 export default function ProjectsSection() {
     return (
-        <main id="projects">
+        <main id="projects" className="scroll-mt-32">
             <div>
                 <Typography
                     variant="mobileH2"

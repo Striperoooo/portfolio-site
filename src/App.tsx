@@ -8,9 +8,9 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen">
+      <div className="min-h-screen flex flex-col items-center">
         <Header />
-        <div className="px-4 pt-28">
+        <div className="px-4 pt-28 w-full max-w-[1224px]">
 
           <HeroSection />
 
