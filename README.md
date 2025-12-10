@@ -2,6 +2,8 @@
 
 A personal portfolio website built to showcase my frontend development projects and skills. Designed with a focus on accessibility, performance, and clean UI/UX.
 
+**[![View Live Site](img.shields.io)](https://dev-portfolio-charles.netlify.app/)**
+
 ## Tech Stack
 
 - **Framework:** React 19
