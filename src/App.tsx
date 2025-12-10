@@ -9,9 +9,8 @@ function App() {
   return (
     <>
       <div className="min-h-screen">
-        <div className="px-4">
-
-          <Header />
+        <Header />
+        <div className="px-4 pt-28">
 
           <HeroSection />
 

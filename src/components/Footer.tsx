@@ -5,7 +5,7 @@ import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
     return (
-        <footer className="mt-24 mb-10">
+        <footer id="contact" className="mt-24 mb-10">
             <div className="flex flex-col gap-6">
                 <Typography
                     variant="mobileH2"

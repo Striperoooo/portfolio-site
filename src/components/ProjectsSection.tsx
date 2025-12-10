@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard"
 
 export default function ProjectsSection() {
     return (
-        <main>
+        <main id="projects">
             <div>
                 <Typography
                     variant="mobileH2"

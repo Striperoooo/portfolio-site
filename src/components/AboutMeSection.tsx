@@ -3,7 +3,7 @@ import { TechBadge } from "./ui/TechBadge"
 
 export default function AboutMeSection() {
     return (
-        <section className="mt-16 mb-24">
+        <section id="about" className="mt-16 mb-24">
             <div>
                 <Typography
                     variant="mobileH2"
