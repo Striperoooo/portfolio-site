@@ -25,7 +25,7 @@ export default function HeroSection() {
 
                     <div className="mt-8 flex items-center gap-4">
                         <a
-                            href="/assets/CharlesDeiniel_Villanueva_Resume.pdf" // Path to the PDF in your public folder
+                            href="/assets/CharlesDeinielVillanueva_Resume_2025" // Path to the PDF in your public folder
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 
@@ -41,7 +41,7 @@ export default function HeroSection() {
                         </a>
 
                         <a
-                            href="https://google.com"
+                            href="www.linkedin.com/in/charlesdeiniel-villanueva"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group inline-flex items-center justify-center w-12 h-12 bg-misc-fill rounded-full cursor-pointer
@@ -54,7 +54,7 @@ export default function HeroSection() {
                         </a>
 
                         <a
-                            href="https://google.com"
+                            href="https://github.com/Striperoooo"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group inline-flex items-center justify-center w-12 h-12 bg-misc-fill rounded-full cursor-pointer

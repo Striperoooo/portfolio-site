@@ -25,18 +25,18 @@ export default function Footer() {
 
                 <div className="md:w-1/2 flex flex-col md:items-end gap-6">
                     <a
-                        href="mailto:charlesdeiniel@gmail.com"
+                        href="mailto:charlesdeiniel.villanueva@gmail.com"
                         className="flex items-center gap-3 text-neutral-white hover:text-primary transition-colors w-fit"
                     >
                         <FontAwesomeIcon icon={faEnvelope} className="text-2xl" />
                         <Typography variant="mobileH3" className="font-bold text-lg sm:text-2xl">
-                            charlesdeiniel@gmail.com
+                            charlesdeiniel.villanueva@gmail.com
                         </Typography>
                     </a>
 
                     <div className="flex items-center gap-4 mt-2">
                         <a
-                            href="/assets/CharlesDeiniel_Villanueva_Resume.pdf"
+                            href="/assets/CharlesDeinielVillanueva_Resume_2025.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 
@@ -52,7 +52,7 @@ export default function Footer() {
                         </a>
 
                         <a
-                            href="https://linkedin.com"
+                            href="www.linkedin.com/in/charlesdeiniel-villanueva"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group inline-flex items-center justify-center w-12 h-12 bg-misc-fill rounded-full cursor-pointer
