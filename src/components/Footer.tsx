@@ -52,7 +52,7 @@ export default function Footer() {
                         </a>
 
                         <a
-                            href="www.linkedin.com/in/charlesdeiniel-villanueva"
+                            href="https://www.linkedin.com/in/charlesdeiniel-villanueva"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group inline-flex items-center justify-center w-12 h-12 bg-misc-fill rounded-full cursor-pointer
